@@ -1,0 +1,145 @@
+#arcive-category-woocommerce-template-e8a908 {
+    .content-area{
+        .site-main{
+            .woocommerce-breadcrumb{
+                font-family: 'futura';
+                font-size: 1.1rem;
+                a{
+                    font-weight: bolder;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .content-left{
+        #sidebar{
+            ul{
+                padding: 0;
+                .wc-block-components-price-slider__range-input-progress{
+                    --range-color:#e30613 !important;
+                }
+                .wc-block-price-filter__title{
+                    display: none;
+                }
+            }
+        }
+        h2{
+            color: $red;
+            font-family: 'futura';
+            font-weight: bolder;
+        }
+        .menu{
+            list-style: none;
+            padding: 1rem;
+            border:1px solid $gris;
+            li.parent{
+                padding: .3rem 0;
+                position: relative;
+                border-bottom: 1px solid $gris;
+                &:last-child{
+                    border-bottom: none;
+                }
+                &::before{
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f0da";
+                    display: inline-block;
+                    padding-right: 3px;
+                    vertical-align: middle;
+                    font-weight: 900;
+                    color: $gris;
+                    position: absolute;
+                    right: 0;
+                }
+                a{
+                    text-decoration: none;
+                    font-family: 'futura';
+                    color: $gris;
+                    font-size: 1.2rem;
+                    font-weight: bolder;
+                }
+                .sub-menu{
+                    list-style: none;
+                    padding-left: 15px;
+                    display: none;
+                    transition: .2s;
+                }
+            }
+            li.parent.active{
+                &::before{
+                    transform: rotate(90deg);
+                    color:$red;
+                }
+                a{
+                    color: $red;
+                }
+                .sub-menu{
+                    display: block;
+                    li{
+                        a{
+                            color: $gris;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*====================Banner======================*/
+    .content-banner{
+        img{
+            width: 100%;
+        }
+    }
+    /*=============Content Product====================*/
+    .content-product-cat{
+        .woocommerce{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .woocommerce-notices-wrapper{
+                display: none;
+            }
+            .content-products{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .products-cards{
+                    max-width: 27%;
+                    margin: 1rem 22px;
+                }
+                @media(max-width:480px){
+                    .products-cards{
+                        max-width: 100%;
+                    }
+                }
+                @media screen and (min-width:481px) and (max-width:1177px){
+                    .products-cards{
+                        max-width: 42%;
+                    }
+                }
+            }
+            .woocommerce-pagination{
+                margin: 2rem auto;
+            }
+        }
+    }
+    .woocommerce-pagination{
+        .page-numbers{
+            li{
+                .page-numbers{
+                    font-family: 'futura';
+                    font-weight: bolder;
+                    color: $gris;
+                    transition: .3s;
+                    &:hover{
+                        background: $red;
+                        color: white;
+                    }
+                }
+                .current{
+                    background: $red;
+                    color: white;
+                }
+            }
+        }
+    }
+}

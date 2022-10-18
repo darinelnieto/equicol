@@ -1,0 +1,43 @@
+{
+    "key": "group_631e5f60946b1",
+    "title": "Novedades",
+    "fields": [
+        {
+            "key": "field_631e5f6ba7140",
+            "label": "Descripción corta",
+            "name": "descripcion_corta",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": 150,
+            "rows": 3,
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1662937957
+}

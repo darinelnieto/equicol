@@ -1,0 +1,119 @@
+.videos-categories-partial-bd00c4 {
+    .content-categories{
+        h2{
+            font-family: 'futura';
+            color: $red;
+            font-size: 1.7rem;
+            font-weight: bolder;
+        }
+        .menu-categorias-videos-container{
+            ul{
+                list-style: none;
+                padding: 1rem;
+                border:1px solid $gris;
+                li{
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                    a{
+                        text-decoration: none;
+                        font-family: 'futura';
+                        color: $gris;
+                        font-size: 1.2rem;
+                        font-weight: bolder;
+                    }
+                    .sub-menu{
+                        list-style: none;
+                        padding-left: 15px;
+                        display: none;
+                        transition: .2s;
+                        border: none;
+                        padding: 0 .7rem;
+                    }
+                }
+                li.parent{
+                    padding: .3rem 0;
+                    position: relative;
+                    border-bottom: 1px solid $gris;
+                    
+                    &::before{
+                        font-family: "Font Awesome 5 Free";
+                        content: "\f0da";
+                        display: inline-block;
+                        padding-right: 3px;
+                        vertical-align: middle;
+                        font-weight: 900;
+                        color: $gris;
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+                li.parent.active{
+                    &::before{
+                        transform: rotate(90deg);
+                        color:$red;
+                    }
+                    a{
+                        color: $red;
+                    }
+                    .sub-menu{
+                        display: block;
+                        li{
+                            a{
+                                color: $gris;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contentt-showt-curses{
+        border: 1px solid $gris;
+        padding: 1rem;
+        text-align: center;
+        h2{
+            font-family: 'futura';
+            color: $red;
+            font-size: 1.7rem;
+            font-weight: bolder;
+            text-align: center;
+        }
+        p{
+            color: $gris;
+            font-family: 'futura';
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        a{
+            font-family: 'futura';
+            font-weight: bolder;
+            color: $gris;
+            padding: 5px 1.5rem;
+            border: 1px solid $gris;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.3rem;
+            position: relative;
+            &::after{
+                content: '';
+                position:absolute;
+                display: block;
+                left: 0;
+                top: 0;
+                width: 0;
+                height: 100%;
+                background-color: $gris;
+                transition: .3s;
+                z-index: -2;
+                border-radius: .2rem;
+            }
+            &:hover{
+                color: white;
+                &::after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

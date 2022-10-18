@@ -1,0 +1,18 @@
+@import 'default_theme';
+@import 'single_product';
+@import 'cart';
+// Ditto include zone (don't delete anything below)
+// #DittoPartials
+@import "./partials/videos-categories";
+@import "./partials/video-page-content";
+@import "partials/hello";
+// #DittoTemplates
+@import "./templates/login-and-register-template";
+@import "./templates/blog-template";
+@import "./templates/single-post-template";
+@import "./templates/videos-template";
+@import "./templates/archive-videos-template";
+@import "./templates/work-with-us-template";
+@import "./templates/about-us-template";
+@import "./templates/arcive-category-woocommerce-template";
+@import "./templates/equicol-template";

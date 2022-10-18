@@ -1,0 +1,430 @@
+@font-face {
+   font-family: 'poppins';
+   src: url('/Fonts/poppins-medium-webfont.woff2') format('woff2'),
+        url('/Fonts/poppins-medium-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'futura';
+   src: url('/Fonts/futura-heavy-bt-webfont.woff2') format('woff2'),
+        url('/Fonts/futura-heavy-bt-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+// variables
+$gris: #575756;
+$red: #e30613;
+$grisClaro: #b3b2b2;
+$animationFilter: drop-shadow(-3px 3px white);
+
+body {
+   margin: 0;
+   scroll-behavior: smooth;
+   .container{
+      max-width: 1260px;
+   }
+   header{
+      padding: 1rem 0;
+      
+      .menu-menu-header-container{
+         ul{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0;
+            li{
+               margin: 0 15px;
+               a{
+                  text-decoration: none;
+                  font-family: 'futura';
+                  font-weight: 600;
+                  letter-spacing: 2px;
+                  color: $gris;
+               }
+               .sub-menu{
+                  display: none;
+                  padding-left: 0;
+                  position: absolute;
+                  z-index: 30;
+                  top: 44px;
+                  left: 0;
+                  background: white;
+                  box-shadow: 0px 5px 7px -3px;
+                  li{
+                     margin: 0;
+                     padding: 10px;
+                     a{
+                        font-size: 1rem;
+                     }
+                     &:hover{
+                        background: $gris;
+                        a{
+                           color: white;
+                        }
+                     }
+                  }
+               }
+               &:hover{
+                  background: white;
+                  .sub-menu{
+                     display: block;
+                  }
+               }
+            }
+            .dad{
+               position: relative;
+               padding: 10px 20px 10px 10px;
+               &::before{
+                  content: '';
+                  position: absolute;
+                  right: 7px;
+                  top: 17px;
+                  display: inline;
+                  width: 7px;
+                  height: 7px;
+                  border-bottom: 2px solid $gris;
+                  border-left: 2px solid $gris;
+                  transform: rotate(-45deg);
+               }
+            }
+         }
+         @media(max-width:1100px){
+            width: 250px;
+            position: fixed;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 3px 4px 2px;
+            background: white;
+            transition: .2s;
+            display: none;
+            &.active{
+               display: block;
+            }
+            ul{
+               display: block;
+               position: absolute;
+               top: 5%;
+               padding-left: 25px;
+               li{
+                  margin: 0 !important;
+                  padding: 10px 20px 10px 0px !important;
+                  .sub-menu{
+                     position: inherit;
+                     top: 0;
+                     padding-top: 5px;
+                     box-shadow: none;
+                     border-bottom: 1px solid;
+                  }
+               }
+            }
+         }
+      }
+      .search-movil{
+         display: none;
+      }
+      @media(max-width:480px){
+         .search-movil{
+            display: block;
+         }
+      }
+      .content-right-header{
+         display: flex;
+         align-items: center;
+         .aws-container{
+            width: 80%;
+         }
+         .car-btn{
+            color: $gris;
+            text-decoration: none;
+            font-size: 1.6rem;
+            margin-left: 10px;
+            position: relative;
+            top: -4px;
+         }
+         .aws-container .aws-show-clear .aws-search-field{
+            border-radius: 20px !important;
+            padding: 2px 20px;
+            max-height: 36px;
+            background: transparent;
+            font-family: 'futura';
+            color: $gris;
+            width: 100%;
+            &::placeholder{
+               color: $gris;
+               font-family: 'futura';
+            }
+         }
+         .bar-menu{
+            position: relative;
+            top: -4px;
+            cursor: pointer;
+            margin-left: 5px;
+            span{
+               width: 30px;
+               height: 2px;
+               background: $gris;
+               margin: 6px 0;
+               display: block;
+            }
+            .top{
+               margin: 0;
+            }
+            .bottom{
+               margin: 0;
+            }
+            @media(min-width:1100px){
+               display: none;
+            }
+         }
+         @media(max-width: 480px){
+            justify-content: right;
+            .aws-container{
+               display: none;
+            }
+         }
+      }
+      
+   }
+   .woocommerce-breadcrumb{
+      font-family: 'futura';
+      font-size: 1.1rem;
+      a{
+          font-weight: bolder;
+          text-decoration: none;
+      }
+  }
+   /*============Footer================*/
+   footer{
+      background: #f6f6f6;
+      .suscribe{
+         background: $gris;
+         padding: 1rem 0;
+         h4{
+            font-family: 'futura';
+            color: white;
+            margin-bottom: 1rem;
+         }
+         .content-inputs{
+            input{
+               outline: none;
+               height: 35px;
+               width: 100%;
+               font-family: 'futura';
+               font-weight: 300;
+               color: $gris;
+               padding-left: 20px;
+               font-size: 1.3rem;
+               background: white;
+               &::placeholder{
+                  font-family: 'futura';
+                  font-weight: 300;
+                  color: $gris;
+                  font-size: 1.2rem;
+               }
+            }
+         }
+         .content-submit{
+            input{
+               background: $red;
+               color: white;
+               font-family: 'futura';
+               font-weight: 400;
+               height: 35px;
+               padding: 0 4rem;
+               border: none;
+               outline: none;
+               font-size: 1.3rem;
+               letter-spacing: 1px;
+            }
+            .wpcf7-spinner{
+               position: absolute;
+            }
+         }
+      }
+      .content-footer{
+         .content-left{
+            .logo{
+               width: 100%;
+               max-width: 345px;
+            }
+            p{
+               font-family: 'futura';
+               font-size: 1.2rem;
+               line-height: 1.1;
+               margin-top: 1rem;
+               color: $gris;
+            }
+         }
+         .content-center{
+            h2{
+               color: $red;
+               font-family: 'futura';
+               font-weight: bolder;
+            }
+            p{
+               font-family: 'futura';
+               color: $gris;
+               font-size: 1.1rem;
+               line-height: 1.3;
+               strong{
+                  font-weight: bolder;
+               }
+               a{
+                  color: $gris;
+                  text-decoration: none;
+                  transition: .2s;
+                  &:hover{
+                     text-decoration: underline;
+                     color: $red;
+                  }
+               }
+            }
+         }
+         .redes{
+            h2{
+               color: $red;
+               font-family: 'futura';
+               font-weight: bolder;
+            }
+            a{
+               text-decoration: none;
+               margin: 0 5px;
+               img{
+                  width: 35px;
+               }
+            }
+         }
+         .novedades{
+            h2{
+               color: $red;
+               font-family: 'futura';
+               font-weight: bolder;
+            }
+            ul{
+               list-style: none;
+               padding-left: 0;
+               li{
+                  a{
+                     color: $gris;
+                     font-family: 'futura';
+                     text-decoration: none;
+                     font-weight: bolder;
+                     font-size: 1.1rem;
+                     line-height: 1;
+                     transition: .3s;
+                     &:hover{
+                        color: $grisClaro;
+                     }
+                  }
+               }
+            }
+         }
+         .copy-right{
+            .text-center{
+               border-top: 1px solid $gris;
+               padding: 1rem 0;
+               p{
+                  font-family: 'futura';
+                  color: $gris;
+                  font-weight: bolder;
+                  margin-bottom: 0;
+                  font-size: 1.3rem;
+               }
+            }
+         }
+      }
+   }
+   /*====================Card Woocommerce=======================*/
+   .products-cards{
+      transition: .4s;
+      border-radius: 10px;
+      a{
+         text-decoration: none;
+         .content-image{
+            .yith-wcwl-add-to-wishlist{
+               position: absolute;
+               right: 2%;
+               width: 36px;
+               height: 31px;
+               overflow: hidden;
+            }
+            .attachment-woocommerce_thumbnail.size-woocommerce_thumbnail{
+               border-radius: 10px 10px 0 0;
+            }
+            .onsale{
+               position: absolute;
+               left: 0;
+               background-color: $red;
+               color: white;
+               width: fit-content;
+               border-radius: 0 20px 20px 0;
+               padding: 5px 10px;
+               top: 10px;
+               line-height: 1.4;
+               min-height: 20px;
+               font-family: 'futura';
+               font-weight: 600;
+               font-size: .9rem;
+            }
+         }
+         .card-body{
+            padding: .8rem 10px;
+            .content-title{
+               h2{
+                  font-family: 'futura';
+                  color: $gris;
+                  font-size: 1.3rem;
+                  font-weight: bolder;
+                  transition: .2s;
+               }
+            }
+            .content-features{
+               p{
+                  color: $gris;
+                  font-family: 'futura';
+                  margin-bottom: 0;
+                  transition: .2s;
+                  .price{
+                     del{
+                        text-decoration: 2px line-through $red;
+                     }
+                     ins{
+                        text-decoration: none;
+                     }
+                  }
+               }
+            }
+         }
+      }
+      &:hover{
+         box-shadow: 0px 4px 23px -10px $grisClaro;
+         a{
+            .card-body{
+               .content-title{
+                  h2{
+                     color: $red;
+                  }
+               }
+               .content-features{
+                  p{
+                     color: $grisClaro;
+                  }
+               }
+            }
+         }
+      }
+   }
+   .woocommerce-breadcrumb{
+      font-size: 1.1em !important;
+      a{
+         font-family: 'futura';
+         color: $gris;
+      }
+   }
+}

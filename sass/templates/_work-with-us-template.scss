@@ -1,0 +1,173 @@
+#work-with-us-template-39b3c6 {
+    section{
+        padding-bottom: 3rem;
+        
+        .content-left{
+            img{
+                width: 100%;
+                border-radius: 10px 0 0 10px;
+            }
+            @media(min-width: 1167px){
+                padding-right: 0;
+            }
+            @media(max-width: 1166px){
+                img{
+                    border-radius: 10px 10px 0 0;
+                }
+            }
+        }
+        .content-right{
+            background: white;
+            border-radius: 0 10px 10px 0;
+            box-shadow: 8px 0px 16px -8px;
+            .wpcf7-not-valid-tip {
+                color: #dc3232;
+                font-size: 1em;
+                font-weight: normal;
+                display: block;
+                position: absolute;
+                z-index: 100;
+                background: white;
+                right: 14px;
+                top: -2px;
+            }
+            .wpcf7-response-output {
+                margin: 5px 0 0 0;
+                position: absolute;
+                max-width: 500px;
+                background: white;
+            }
+            h1{
+                font-family: 'futura';
+                color: $gris;
+                font-weight: bolder;
+                text-align: center;
+                font-size: 1.7rem;
+            }
+            .intro{
+                font-family: 'futura';
+                color: $gris;
+                font-size: 1.2rem;
+                text-align: center;
+            }
+            .inputs{
+                input{
+                    width: 100%;
+                    height: 35px;
+                    padding: 5px 20px;
+                    outline: none;
+                    border: 1px solid $gris;
+                    font-family: 'futura';
+                    color: $gris;
+                    ::placeholder{
+                        font-family: 'futura';
+                        color: $gris;
+                    }
+                }
+            }
+            .curriculo{
+                display: flex;
+                align-items: center;
+                .wpcf7-form-control-wrap{
+                    display: none;
+                }
+                p{
+                    margin-bottom: 0;
+                }
+                .mensaje{
+                    font-size: 16px;
+                    font-family: 'futura';
+                }
+                .file-btn{
+                    margin-right: 1.5rem;
+                    background: $gris;
+                    color: white;
+                    font-family: 'futura';
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    position: relative;
+                    transition: .2s;
+                    z-index: 1;
+                    border: 1px solid $gris;
+                    padding: 5px 1rem;
+                    height: 36px;
+                    border-radius: .1rem;
+                    width: fit-content;
+                    cursor: pointer;
+                    &::after{
+                        content: '';
+                        position:absolute;
+                        display: block;
+                        left: 0;
+                        top: 0;
+                        width: 0;
+                        height: 100%;
+                        background-color: white;
+                        transition: .3s;
+                        z-index: -2;
+                        border-radius: .1rem;
+                    }
+                    &:hover{
+                        color: $gris;
+                        &::after{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .label-politicas{
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                .wpcf7-form-control-wrap, br{
+                    display: none;
+                }
+                .anima-check{
+                    display: block;
+                    width: 15px;
+                    height: 15px;
+                    border: 1px solid $gris;
+                    margin-right: 10px;
+                    transition: .2s;
+                }
+                .anima-check.active{
+                    border: none;
+                    border-left: 1px solid $gris;
+                    border-bottom: 1px solid $gris;
+                    height: 10px;
+                    transform: rotate(-45deg);
+                }
+                .text-politicas{
+                    font-size: 'futura';
+                    color: $gris;
+                    a{
+                        color: $gris;
+                    }
+                }
+            }
+            .submit{
+                text-align: center;
+                .wpcf7-spinner{
+                    position: absolute;
+                }
+                input[type="submit"]{
+                    background: $gris;
+                    color: white;
+                    font-family: 'futura';
+                    width: fit-content;
+                    padding: 3px 10px;
+                    border: none;
+                }
+                input[type=submit]:disabled{
+                    background: $grisClaro;
+                    color: white;
+                }
+            }
+            @media(max-width: 1167px){
+                border-radius: 0 0 10px 10px;
+                box-shadow: 0px 8px 16px -8px;
+                padding: 2rem 10px;
+            }
+        }
+    }
+}

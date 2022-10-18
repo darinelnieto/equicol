@@ -1,0 +1,83 @@
+#login-and-register-template-a000f9 {
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    section{
+        background: rgba(0,0,0,.2);
+        font-family: 'futura';
+        .container .row .col-12{
+            background: rgba(255, 255, 255, .6);
+            border-radius: 4px;
+            box-shadow: 0 0 3px 0 #999;
+            .pieregWrapper #pie_register .fields .input_fields, .pieregWrapper #piereg_login .input_fields, .piereg_login_container .piereg_login_wrapper .piereg_resetpassform .input_fields{
+                width:100%;
+                height: 40px;
+                background: white;
+                outline: none;
+                font-family: 'futura';
+                &::placeholder{
+                    font-family: 'futura';
+                }
+            }
+            #pie_register .fieldset span.show-hide-password-innerbtn.confirm-pass-eye-reg_left_label_no_desc, #pie_register .fieldset span.show-hide-password-innerbtn.confirm-pass-eye-reg_top_label_no_desc{
+                bottom: 14%;
+            }
+            .pieregWrapper #pie_register .fields label{
+                display: none;
+            }
+            #piereg_passwordStrength{
+                float: none;
+                margin: 0 auto;
+            }
+            .pieregWrapper #pie_register .fields input[type="submit"], .pieregWrapper #pie_register .fields input[type="reset"],
+            .piereg_container .piereg_login_wrapper .submit input[type="submit"], .pieregWrapper input[type="submit"], .pieregWrapper .pie_prev, .pieregWrapper .pie_next, #piereg_login form#piereg_lostpasswordform p input[type="submit"], .pieregWrapper input[type="reset"], .pieregWrapper input[type="button"], .pieregWrapper input[type="reset"]{
+                float: none;
+                border: none;
+                border-radius: 3px;
+                background: $gris !important;
+                font-family: 'futura';
+                outline: none;
+            }
+            #piereg_pie_form_desc{
+                font-weight: 600;
+                font-family: 'futura';
+            }
+            .piereg_login_container .piereg_login_wrapper .piereg_loginform .forgetmenot{
+                margin: 0 auto;
+                font-family: 'futura';
+            }
+            .piereg_container div.piereg_login_container .forgetmenot [type="checkbox"]:checked + label:before, .piereg_container div.piereg_login_container .forgetmenot [type="checkbox"]:not(:checked) + label:before{
+                left: 97px;
+                font-family: 'futura';
+            }
+            .piereg_login_container .piereg_login_wrapper .piereg_loginform p#nav, .piereg_login_container .piereg_login_wrapper .piereg_resetpassform p.nav{
+                margin: 0 auto;
+            }
+            #nav a{
+                color: #555 !important;
+                font-family: 'futura';
+                font-weight: 600;
+            }
+            .piereg_container div.piereg_login_container .forgetmenot [type="checkbox"]:checked + label, .piereg_container div.piereg_login_container .forgetmenot [type="checkbox"]:not(:checked) + label{
+                color: #555 !important;
+                font-family: 'futura';
+                font-weight: 600;
+            }
+            #pie_register .fields .fieldset span.show-hide-password-innerbtn.pass-eye-login{
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .pieregWrapper #pie_register .fields .legend.error{
+                font-family: 'futura';
+                color: $red;
+            }
+            .pieregWrapper #pie_register .fields .pie_wrap_buttons{
+                margin: 0 auto;
+            }
+            #login-and-register-template-a000f9 section .container .row .col-12 #pie_register .fieldset span.show-hide-password-innerbtn.pass-eye-reg_left_label_no_desc {
+                top: 50% !important;
+                transform: translateY(-50%) !important;
+            }
+        }
+    }
+}

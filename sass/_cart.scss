@@ -1,0 +1,209 @@
+table{
+    font-family: 'futura';
+    color: $gris;
+    font-size: 1.2rem;
+    th{
+        font-weight: bolder;
+        color: $gris;
+    }
+    td{
+        font-weight: 300;
+        color: $gris;
+        a{
+            color: $gris;
+            text-decoration: none;
+            transition: .2s;
+            &:hover{
+                color:$red;
+            }
+        }
+    }
+    .product-thumbnail{
+        a{
+            img{
+                width:100px !important;
+            }
+        }
+    }
+}
+.wc-proceed-to-checkout{
+    a{
+        background: $gris !important;
+    }
+}
+.cart_totals{
+    font-family: 'futura';
+    color: $gris;
+    font-weight: bolder;
+}
+
+/*===============Checkout================*/
+.woocommerce-checkout{
+    h3{
+        font-family: 'futura';
+        color: $gris;
+        font-weight: bolder;
+    }
+    label{
+        font-family: 'futura';
+        color: $gris;
+        .required{
+            color: $red;
+        }
+    }
+    input{
+        height: 40px;
+        font-family: 'futura';
+        color:$gris;
+        padding: 5px 20px;
+        border: 1px solid $grisClaro;
+        outline: none;
+        &::placeholder{
+            color: $grisClaro;
+            font-family: 'futura';
+        }
+    }
+    .validate-state, .validate-required{
+        font-family: 'futura';
+        color:$gris;
+        .select2-selection{
+            height: 40px;
+            padding: 4px 15px;
+            border-radius: 0;
+            .select2-selection__arrow{
+                top: 50%;
+                transform: translateY(-50%);
+                right: 2%;
+            }
+        }
+    }
+    textarea{
+        font-family: 'futura';
+        color:$gris;
+        padding: 5px 20px;
+        border: 1px solid $grisClaro;
+        outline: none;
+    }
+}
+
+.woocommerce-checkout-payment{
+    background: $grisClaro;
+    font-family: 'futura';
+    a{
+        color: $grisClaro;
+    }
+    .button{
+        background: $gris !important;
+    }
+}
+
+.woocommerce-info{
+    border-top-color: $gris;
+    font-family: 'futura';
+    color: $gris;
+    a{
+        color: $grisClaro;
+    }
+    &::before{
+        color: $gris;
+    }
+}
+.woocommerce-error{
+    font-family: 'futura';
+    color: $gris;
+}
+.woocommerce-order{
+    p, address{
+        font-family: 'futura' !important;
+        color: $gris;
+    }
+    h2{
+        font-family: 'futura' !important;
+        color: $gris;
+        font-weight: bolder;
+    }
+    ul{
+        li{
+            font-family: 'futura' !important;
+            color: $gris;
+        }
+    }
+}
+
+.wc-backward{
+    background: $gris !important;
+    color: white !important;
+}
+
+.woocommerce-MyAccount-navigation{
+    ul{
+        list-style: none;
+        padding-left: 0;
+        li{
+            font-family: 'futura';
+            font-weight: 700;
+            a{
+                text-decoration: none;
+                color: $gris;
+                transition: .2s;
+                &:hover{
+                    color: $red;
+                }
+            }
+        }
+    }
+}
+
+.woocommerce-MyAccount-content{
+    font-family: 'futura';
+    color: $gris;
+    a{
+        color: $gris;
+        font-weight: 900;
+        transition: .2s;
+        &:hover{
+            color: $grisClaro;
+        }
+    }
+}
+.woocommerce-button, .woocommerce-Button{
+    background: $gris !important;
+    color: white !important;
+}
+.woocommerce-MyAccount-content{
+    form{
+        input{
+            height: 40px;
+            font-family: 'futura';
+            color:$gris;
+            padding: 5px 20px;
+            border: 1px solid $grisClaro;
+            outline: none;
+            &::placeholder{
+                color: $grisClaro;
+                font-family: 'futura';
+            }
+        }
+        .validate-state, .validate-required{
+            font-family: 'futura';
+            color:$gris;
+            .select2-selection{
+                height: 40px;
+                padding: 4px 15px;
+                border-radius: 0;
+                .select2-selection__arrow{
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 2%;
+                }
+            }
+        }
+        .button{
+            background: $gris !important;
+            color: white !important;
+        }
+    }
+}
+.aws-container .aws-search-form .aws-search-clear{
+    top: -8px;
+}
