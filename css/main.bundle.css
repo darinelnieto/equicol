@@ -19,6 +19,9 @@ body {
     max-width: 1260px; }
   body header {
     padding: 1rem 0; }
+    body header img.custom-logo {
+      width: 200px;
+      height: auto; }
     body header .menu-menu-header-container ul {
       display: flex;
       list-style: none;
@@ -172,7 +175,8 @@ body {
         color: #575756;
         padding-left: 20px;
         font-size: 1.3rem;
-        background: white; }
+        background: white;
+        border: none; }
         body footer .suscribe .content-inputs input::placeholder {
           font-family: 'futura';
           font-weight: 300;

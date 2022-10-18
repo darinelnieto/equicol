@@ -28,7 +28,10 @@ body {
    }
    header{
       padding: 1rem 0;
-      
+      img.custom-logo {
+         width: 200px;
+         height: auto;
+      }
       .menu-menu-header-container{
          ul{
             display: flex;
@@ -221,6 +224,7 @@ body {
                padding-left: 20px;
                font-size: 1.3rem;
                background: white;
+               border: none;
                &::placeholder{
                   font-family: 'futura';
                   font-weight: 300;
