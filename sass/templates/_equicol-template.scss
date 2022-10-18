@@ -116,6 +116,21 @@
                     }
                 }
             }
+            .owl-dot{
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background: $gris;
+                margin: 0 7px;
+                transition: .6s;
+                outline: none;
+            }
+            .owl-dot.active{
+                width: 17px;
+                height: 17px;
+                background: $red;
+                transform: scale(1.1);
+            }
         }
     }
     /*===================Courses content=======================*/

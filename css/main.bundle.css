@@ -1871,6 +1871,19 @@ table {
             filter: drop-shadow(-3px 3px white); }
         #equicol-template-09006d .content-categories .slide-category-home .owl-item .item a:hover h4 {
           color: #e30613; }
+      #equicol-template-09006d .content-categories .slide-category-home .owl-dot {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #575756;
+        margin: 0 7px;
+        transition: .6s;
+        outline: none; }
+      #equicol-template-09006d .content-categories .slide-category-home .owl-dot.active {
+        width: 17px;
+        height: 17px;
+        background: #e30613;
+        transform: scale(1.1); }
   #equicol-template-09006d .courses-content {
     padding-bottom: 3rem; }
     #equicol-template-09006d .courses-content .content-top {

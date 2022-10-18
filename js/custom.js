@@ -29,13 +29,16 @@ $('.slide-category-home').owlCarousel({
     smartSpeed:1500,
     loop:false,
     margin:10,
-    nav:true,
+    dots:false,
+    nav:false,
     responsive:{
         0:{
-            items:2
+            items:2,
+            dots:true
         },
         600:{
-            items:4
+            items:4,
+            dots:true
         },
         1000:{
             items:6
