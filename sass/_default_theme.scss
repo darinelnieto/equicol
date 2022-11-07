@@ -1,15 +1,7 @@
 @font-face {
-   font-family: 'poppins';
-   src: url('/Fonts/poppins-medium-webfont.woff2') format('woff2'),
-        url('/Fonts/poppins-medium-webfont.woff') format('woff');
-   font-weight: normal;
-   font-style: normal;
-}
-
-@font-face {
    font-family: 'futura';
-   src: url('/Fonts/futura-heavy-bt-webfont.woff2') format('woff2'),
-        url('/Fonts/futura-heavy-bt-webfont.woff') format('woff');
+   src: url('../Fonts/futura-heavy-bt-webfont.woff2') format('woff2'),
+        url('../Fonts/futura-heavy-bt-webfont.woff') format('woff');
    font-weight: normal;
    font-style: normal;
 }
@@ -192,7 +184,6 @@ body {
             }
          }
       }
-      
    }
    .woocommerce-breadcrumb{
       font-family: 'futura';

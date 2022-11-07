@@ -9,7 +9,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  * https://developer.wordpress.org/reference/hooks/wp_enqueue_scripts/
  */
 function ditto_scripts() {
-  wp_enqueue_style('futura_hv_btheavy', get_stylesheet_directory_uri() . '/css/main.bundle.css');
   wp_enqueue_style( 'core', get_template_directory_uri() . '/style.css' );
   wp_enqueue_style( 'main-styles', get_template_directory_uri() . '/css/main.bundle.css' );
   wp_enqueue_style('bootstrap.css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
